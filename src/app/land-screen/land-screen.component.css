@@ -1,0 +1,20 @@
+/* Desktop styling */
+#city-hdr {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 1.4em;
+}
+#curr-wx {
+    margin-top: 4%;
+    text-align: center;
+}
+
+.sect-header {
+    margin-top: 4%;
+    text-align: center;
+}
+
+.sub-sect {
+    margin-top: 1%;
+    text-align: center;
+}
