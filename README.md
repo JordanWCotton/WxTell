@@ -1,6 +1,6 @@
 # WxTell
 
-This application provides the user with weather, 5-day forecast weather, weather alerts, and pollution data for their current location, as well as cities that they input. It pulls data from multiple REST API endpoints from OpenWeatherMap, for more information please visit https://openweathermap.org/api
+This application provides the user with current weather, 5-day forecast weather, weather alerts, and pollution data for their current location, as well as cities that they input. It pulls data from multiple REST API endpoints from OpenWeatherMap, for more information please visit https://openweathermap.org/api
 
 ## Development server
 
