@@ -1,12 +1,31 @@
 /* Desktop styling */
+.container-fluid {
+    background-color: #FBFBFB;
+    border-radius: 6px;
+}
+
 #city-hdr {
     margin-top: 2%;
     text-align: center;
     font-size: 1.4em;
 }
-#curr-wx {
-    margin-top: 4%;
+
+.curr-wx {
+    margin-top: 2%;
     text-align: center;
+}
+
+#curr-temp {
+    font-size: 3.5em;
+}
+
+.curr-details {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+#forecast-row {
+    font-size: 0.8em;
 }
 
 .sect-header {
@@ -17,4 +36,21 @@
 .sub-sect {
     margin-top: 1%;
     text-align: center;
+}
+
+.sub-day {
+    font-weight: 600;
+    border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 750px) {
+/* Mobile styles */
+
+#forecast-row {
+    margin-top: 8%;
+}
+
+#addt-data {
+    margin-top: 6%;
+}
 }

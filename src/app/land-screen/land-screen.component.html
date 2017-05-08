@@ -1,67 +1,76 @@
 <div class="container-fluid">
   <header class="row" id="city-hdr">
-    <div class="col-md-4 offset-4">
+    <div class="col-md-4">
       <h1>Bogalusa, LA</h1>
+      <p>Wed, June 20, 2017</p>
     </div>
   </header>
   <div class="row">
-    <div class="col-md-6 offset-3" id="curr-wx">
-      <h2>Current Weather:</h2>
-      <p>Temp: 24C</p>
-      <p>Humidity: 36%</p>
+    <div class="col-md-4 curr-wx">
+      <p id="curr-temp">24C</p>
+    </div>
+    <div class="col-md-1 curr-wx">
+      <p><span class="curr-details">High:</span></p>
+      <p>31C</p>
+    </div>
+    <div class="col-md-1 curr-wx">
+      <p><span class="curr-details">Low:</span></p>
+      <p>22C</p>
+    </div>
+    <div class="col-md-1 curr-wx">
+      <p><span class="curr-details">Humidity:</span></p> 
+      <p>36%</p>
+    </div>
+    <div class="col-md-1 curr-wx">
+      <p><span class="curr-details">Winds:</span></p> 
+      <p>None</p>
+    </div>
+  </div>
+  <div class="row" id="forecast-row">
+    <div class="col-md-1 offset-md-1 sub-sect">
+      <p class="sub-day">Thu 21</p>
+      <p>24C</p>
+      <p>33C</p>
+      <p>36%</p>
+      <p>Winds: None</p>
+    </div>
+    <div class="col-md-1 offset-md-1 sub-sect">
+      <p class="sub-day">Fri 22</p>
+      <p>24C</p>
+      <p>33C</p>
+      <p>36%</p>
+      <p>Winds: None</p>
+    </div>
+    <div class="col-md-1 offset-md-1 sub-sect">
+      <p class="sub-day">Sat 23</p>
+      <p>24C</p>
+      <p>33C</p>
+      <p>36%</p>
+      <p>Winds: None</p>
+    </div>
+    <div class="col-md-1 offset-md-1 sub-sect">
+      <p class="sub-day">Sun 24</p>
+      <p>24C</p>
+      <p>33C</p>
+      <p>36%</p>
+      <p>Winds: None</p>
+    </div>
+    <div class="col-md-1 offset-md-1 sub-sect">
+      <p class="sub-day">Mon 25</p>
+      <p>24C</p>
+      <p>33C</p>
+      <p>36%</p>
       <p>Winds: None</p>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-6 offset-3 sect-header">
-      <h2>Forecast Weather:</h2>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-2 offset-md-1 sub-sect">
-      <p>Temp: 24C</p>
-      <p>Humidity: 36%</p>
-      <p>Winds: None</p>
-    </div>
-    <div class="col-md-2 sub-sect">
-      <p>Temp: 24C</p>
-      <p>Humidity: 36%</p>
-      <p>Winds: None</p>
-    </div>
-    <div class="col-md-2 sub-sect">
-      <p>Temp: 24C</p>
-      <p>Humidity: 36%</p>
-      <p>Winds: None</p>
-    </div>
-    <div class="col-md-2 sub-sect">
-      <p>Temp: 24C</p>
-      <p>Humidity: 36%</p>
-      <p>Winds: None</p>
-    </div>
-    <div class="col-md-2 sub-sect">
-      <p>Temp: 24C</p>
-      <p>Humidity: 36%</p>
-      <p>Winds: None</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6 offset-3 sect-header">
+  <div class="row" id="addt-data">
+    <div class="col-md-6 sect-header">
       <h2>Active Weather Alerts:</h2>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4 offset-4 sub-sect" id="wx-alerts">
       <h4>NONE</h4>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6 offset-3 sect-header">
-      <h2>Current Pollution Levels:</h2>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4 offset-4 sub-sect" id="pollution-data">
-      <p>Polloution data here</p>
+    <div class="col-md-6 sect-header">
+      <h2>Pollution Levels:</h2>
+      <h4>Pollution data here</h4>
     </div>
   </div>
 </div>
