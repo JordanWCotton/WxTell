@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { LandScreenComponent } from './land-screen/land-screen.component';
 import { routing } from './app-routing';
+import { WeatherService } from './weather.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { routing } from './app-routing';
     HttpModule,
     routing
   ],
-  providers: [],
+  providers: [WeatherService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

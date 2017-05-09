@@ -5,6 +5,7 @@
     "module": "es2015",
     "baseUrl": "",
     "types": [],
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   },
   "exclude": [
