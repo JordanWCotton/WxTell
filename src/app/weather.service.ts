@@ -4,8 +4,8 @@ import 'rxjs/Rx';
 
 @Injectable() 
 export class WeatherService {
-  private currentUrl = 'http://api.openweathermap.org/data/2.5/weather?q=';
-  private forecastUrl = 'http://api.openweathermap.org/data/2.5/forecast?q='
+  private currentUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
+  private forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?q='
   private cityName = '';
   private country = '';
   private apiKey = 'd2c53883415b03a1f6b763785973b9f2';
