@@ -8,7 +8,7 @@ export class WeatherService {
   private forecastUrl = 'http://api.openweathermap.org/data/2.5/forecast?q='
   private cityName = '';
   private country = '';
-  private apiKey = 'd2c53883415b03a1f6b763785973b9f2';
+  private apiKey = process.env.OPENWX_API;
 
   constructor(private http: Http) { }
 
@@ -20,11 +20,11 @@ export class WeatherService {
 
     return this.http.get(apiCall)
     .map(
-            (response: Response) => {
-                const data = response.json();
-                return data;
-            }
-        )
+      (response: Response) => {
+        const data = response.json();
+        return data;
+      }
+    )
   }
 
   getWeatherForecast (city, country) {

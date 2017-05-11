@@ -1,5 +1,28 @@
-<div class="container-fluid">
-  <header class="row" id="city-hdr">
+<div class="container-fluid" *ngIf="!cityInputted; else weatherData">
+  <div class="row">
+    <div class="col-md-12" id="app-header">
+      <p>WxTell</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 offset-md-3" id="location-enter" *ngIf="!loading; else loadingSpan">
+      <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+        <input class="form-control "type="text" placeholder="Enter city here..."
+        name="cityName" ngModel>
+        <button class="btn btn-primary" id="submit-button" 
+        type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+    <ng-template #loadingSpan>
+      <div class="col-md-12" id="loading-container">
+        <p>Loading weather...</p>
+      </div>
+    </ng-template>
+</div>
+<ng-template #weatherData>
+<div class="container-fluid" id="weather-data-container">
+  <header class="row" id="city-hdr"> 
     <div class="col-md-4">
       <h1>{{displayCity}}</h1>
       <p>{{displayDate}}</p>
@@ -53,14 +76,5 @@
       <p>{{forecast.dayFive.main}}</p>
     </div>
   </div>
-  <div class="row" id="addt-data">
-    <div class="col-md-6 sect-header">
-      <h2>Active Weather Alerts:</h2>
-      <h4>NONE</h4>
-    </div>
-    <div class="col-md-6 sect-header">
-      <h2>Pollution Levels:</h2>
-      <h4>Pollution data here</h4>
-    </div>
-  </div>
 </div>
+</ng-template>

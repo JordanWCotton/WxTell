@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, NgForm } from '@angular/forms';
 
 import { WeatherService } from '../weather.service';
 
@@ -11,9 +12,11 @@ export class LandScreenComponent implements OnInit {
 dayNames: Array<string> = ["Sunday","Monday", "Tuesday", "Wednesday", 
   "Thursday", "Friday", "Saturday"];
 
-  city = 'Bogalusa';
   country = 'us';
 
+  public cityInputted: Boolean;
+  public loading: Boolean;
+  public inputCity: string;
   public displayCity = '';
   public displayDate: Date;
   public displayTemp = 0;
@@ -59,26 +62,6 @@ dayNames: Array<string> = ["Sunday","Monday", "Tuesday", "Wednesday",
 
   ngOnInit() {
     this.displayDate = new Date();
-    /* this.weather.getCurrentWeather(this.city, this.country)
-    .subscribe(
-      (weather) => {
-        console.log(weather);
-        this.displayCity = weather.name;
-        this.displayMain = weather.weather[0].main;
-        this.displayWindSpd = weather.wind.speed;
-        this.displayWindDir = weather.wind.deg;
-        this.setTemperature(weather.main.temp);
-        this.displayHumid = weather.main.humidity;
-      }
-    ) */
-
-    this.weather.getWeatherForecast(this.city, this.country)
-    .subscribe(
-      (forecast) => {
-        console.log(forecast);
-        this.setForecast(forecast.list);
-      }
-    ) 
   }
 
   setTemperature(temp) {
@@ -111,5 +94,30 @@ dayNames: Array<string> = ["Sunday","Monday", "Tuesday", "Wednesday",
     this.forecast.dayFive.humid = forecast[34].main.humidity;
     this.forecast.dayFive.main = forecast[34].weather[0].main;
     this.forecast.dayFive.date = forecast[34].dt_txt.slice(8,10);
+  }
+
+  onSubmit(form: NgForm) {
+    let city = form.value.cityName;
+    this.loading = true;
+
+    this.weather.getCurrentWeather(city, this.country)
+    .subscribe(
+      (weather) => {
+        this.displayCity = weather.name;
+        this.displayMain = weather.weather[0].main;
+        this.displayWindSpd = weather.wind.speed;
+        this.displayWindDir = weather.wind.deg;
+        this.setTemperature(weather.main.temp);
+        this.displayHumid = weather.main.humidity;
+      }
+    ) 
+
+    this.weather.getWeatherForecast(city, this.country)
+    .subscribe(
+      (forecast) => {
+        this.setForecast(forecast.list);
+        this.cityInputted = true;
+      }
+    ) 
   }
 }
