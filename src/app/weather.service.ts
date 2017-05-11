@@ -2,13 +2,13 @@ import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import 'rxjs/Rx';
 
-@Injectable()
+@Injectable() 
 export class WeatherService {
   private currentUrl = 'http://api.openweathermap.org/data/2.5/weather?q=';
   private forecastUrl = 'http://api.openweathermap.org/data/2.5/forecast?q='
   private cityName = '';
   private country = '';
-  private apiKey = process.env.OPENWX_API;
+  private apiKey = 'd2c53883415b03a1f6b763785973b9f2';
 
   constructor(private http: Http) { }
 
@@ -28,7 +28,7 @@ export class WeatherService {
   }
 
   getWeatherForecast (city, country) {
-    let apiCall = this.forecastUrl + city + ',' + country + '&APPID=' + this.apiKey;
+    let apiCall = this.forecastUrl + city + ',' + country + '&units=imperial&APPID=' + this.apiKey;
     return this.http.get(apiCall)
     .map(
       (response: Response) => {

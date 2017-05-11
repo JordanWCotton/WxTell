@@ -1,66 +1,56 @@
 <div class="container-fluid">
   <header class="row" id="city-hdr">
     <div class="col-md-4">
-      <h1>Bogalusa, LA</h1>
-      <p>Wed, June 20, 2017</p>
+      <h1>{{displayCity}}</h1>
+      <p>{{displayDate}}</p>
     </div>
   </header>
   <div class="row">
     <div class="col-md-4 curr-wx">
-      <p id="curr-temp">24C</p>
+      <p class="curr-big">{{displayTemp}} F</p>
     </div>
-    <div class="col-md-1 curr-wx">
-      <p><span class="curr-details">High:</span></p>
-      <p>31C</p>
-    </div>
-    <div class="col-md-1 curr-wx">
-      <p><span class="curr-details">Low:</span></p>
-      <p>22C</p>
+    <div class="col-md-4 curr-wx">
+      <p class="curr-big">{{displayMain}}</p>
     </div>
     <div class="col-md-1 curr-wx">
       <p><span class="curr-details">Humidity:</span></p> 
-      <p>36%</p>
+      <p>{{displayHumid}} %</p>
     </div>
-    <div class="col-md-1 curr-wx">
+    <div class="col-md-2 curr-wx">
       <p><span class="curr-details">Winds:</span></p> 
-      <p>None</p>
+      <p>From {{displayWindDir}} at {{displayWindSpd}} M/s</p>
     </div>
   </div>
   <div class="row" id="forecast-row">
     <div class="col-md-1 offset-md-1 sub-sect">
-      <p class="sub-day">Thu 21</p>
-      <p>24C</p>
-      <p>33C</p>
-      <p>36%</p>
-      <p>Winds: None</p>
+      <p class="sub-day">{{forecast.dayOne.date}}</p>
+      <p>{{forecast.dayOne.temp}} F</p>
+      <p>{{forecast.dayOne.humid}}%</p>
+      <p>{{forecast.dayOne.main}}</p>
     </div>
     <div class="col-md-1 offset-md-1 sub-sect">
-      <p class="sub-day">Fri 22</p>
-      <p>24C</p>
-      <p>33C</p>
-      <p>36%</p>
-      <p>Winds: None</p>
+      <p class="sub-day">{{forecast.dayTwo.date}}</p>
+      <p>{{forecast.dayTwo.temp}} F</p>
+      <p>{{forecast.dayTwo.humid}}%</p>
+      <p>{{forecast.dayTwo.main}}</p>
     </div>
     <div class="col-md-1 offset-md-1 sub-sect">
-      <p class="sub-day">Sat 23</p>
-      <p>24C</p>
-      <p>33C</p>
-      <p>36%</p>
-      <p>Winds: None</p>
+      <p class="sub-day">{{forecast.dayThree.date}}</p>
+      <p>{{forecast.dayThree.temp}} F</p>
+      <p>{{forecast.dayThree.humid}}%</p>
+      <p>{{forecast.dayThree.main}}</p>
     </div>
     <div class="col-md-1 offset-md-1 sub-sect">
-      <p class="sub-day">Sun 24</p>
-      <p>24C</p>
-      <p>33C</p>
-      <p>36%</p>
-      <p>Winds: None</p>
+      <p class="sub-day">{{forecast.dayFour.date}}</p>
+      <p>{{forecast.dayFour.temp}} F</p>
+      <p>{{forecast.dayFour.humid}}%</p>
+      <p>{{forecast.dayFour.main}}</p>
     </div>
     <div class="col-md-1 offset-md-1 sub-sect">
-      <p class="sub-day">Mon 25</p>
-      <p>24C</p>
-      <p>33C</p>
-      <p>36%</p>
-      <p>Winds: None</p>
+      <p class="sub-day">{{forecast.dayFive.date}}</p>
+      <p>{{forecast.dayFive.temp}} F</p>
+      <p>{{forecast.dayFive.humid}}%</p>
+      <p>{{forecast.dayFive.main}}</p>
     </div>
   </div>
   <div class="row" id="addt-data">

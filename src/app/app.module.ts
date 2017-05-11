@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { LandScreenComponent } from './land-screen/land-screen.component';
 import { routing } from './app-routing';
 import { WeatherService } from './weather.service';
+import { CitySelectComponent } from './city-select/city-select.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandScreenComponent
+    LandScreenComponent,
+    CitySelectComponent
   ],
   imports: [
     BrowserModule,
