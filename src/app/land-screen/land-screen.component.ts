@@ -24,6 +24,7 @@ dayNames: Array<string> = ["Sunday","Monday", "Tuesday", "Wednesday",
   public displayMain = '';
   public displayWindSpd = 0;
   public displayWindDir = 0;
+  public weatherIcon = '';
 
   public forecast = {
     dayOne : {
@@ -109,6 +110,7 @@ dayNames: Array<string> = ["Sunday","Monday", "Tuesday", "Wednesday",
         this.displayWindDir = weather.wind.deg;
         this.setTemperature(weather.main.temp);
         this.displayHumid = weather.main.humidity;
+        this.weatherIcon = weather.weather[0].icon;
       }
     ) 
 

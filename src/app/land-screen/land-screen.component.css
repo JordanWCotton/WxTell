@@ -40,6 +40,11 @@
     text-align: center;
 }
 
+#wx-icon {
+    height: 80px;
+    width: 80px;
+}
+
 .curr-big {
     font-size: 3.5em;
 }
@@ -61,9 +66,11 @@
 .sub-sect {
     margin-top: 1%;
     text-align: center;
+    font-size: 1.2em;
 }
 
 .sub-day {
+    font-size: 1.4em;
     font-weight: 600;
     border-bottom: 1px solid black;
 }
