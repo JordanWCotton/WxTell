@@ -10,11 +10,7 @@ import { WeatherService } from '../weather.service';
 })
 
 export class LandScreenComponent implements OnInit {
-dayNames: Array<string> = ["Sunday","Monday", "Tuesday", "Wednesday", 
-  "Thursday", "Friday", "Saturday"];
-
-  country = 'us';
-
+  public country = 'us';
   public cityInputted: Boolean;
   public loading: Boolean;
   public inputCity: string;
