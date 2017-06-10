@@ -8,6 +8,7 @@ import { WeatherService } from '../weather.service';
   templateUrl: './land-screen.component.html',
   styleUrls: ['./land-screen.component.css']
 })
+
 export class LandScreenComponent implements OnInit {
 dayNames: Array<string> = ["Sunday","Monday", "Tuesday", "Wednesday", 
   "Thursday", "Friday", "Saturday"];
