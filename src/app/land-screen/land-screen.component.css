@@ -50,6 +50,7 @@
 }
 
 #main-wx {
+    font-weight: 600;
     font-size: 1.2em;
 }
 
@@ -77,7 +78,7 @@
 
 /* Mobile Styles */
 @media only screen and (max-width: 750px) {
-    
+
 #loading-container {
     font-size: 1.4em;
 }
