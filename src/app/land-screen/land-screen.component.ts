@@ -119,4 +119,8 @@ export class LandScreenComponent implements OnInit {
       }
     ) 
   }
+
+  onReturn () {
+    console.log('Fired.');
+  }
 }

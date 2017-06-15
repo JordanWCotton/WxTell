@@ -25,6 +25,10 @@
     margin-top: 2%;
 }
 
+#return-btn {
+    margin-top: 1%;
+}
+
 #weather-data-container {
     background-color: #FBFBFB;
     border-radius: 6px;
