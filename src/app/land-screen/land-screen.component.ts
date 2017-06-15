@@ -121,6 +121,7 @@ export class LandScreenComponent implements OnInit {
   }
 
   onReturn () {
-    console.log('Fired.');
+    this.cityInputted = false;
+    this.loading = false;
   }
 }
