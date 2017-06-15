@@ -8,7 +8,7 @@ export class WeatherService {
   private forecastUrl = 'http://api.openweathermap.org/data/2.5/forecast?q='
   private cityName = '';
   private country = '';
-  private apiKey = process.env.OPENWX_API;
+  private apiKey = '07025496c9fddd4cffdcf06da5ce3db2';
   constructor(private http: Http) { }
 
   getCurrentWeather (city, country) {
