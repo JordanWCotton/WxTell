@@ -5,7 +5,22 @@
 * {
     font-family: 'Playfair Display', serif;
 }
+
+html {
+    height: 100%;
+}
+
 body {
-    background-color: #16A085;
+    min-height: 100vh;
+}
+
+#app-cont {
+    min-height: 100vh;
+    background-image: url('./assets/images/space.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     padding: 5%;
 }
