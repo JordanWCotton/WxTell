@@ -6,11 +6,13 @@
     margin-top: 6%;
     padding: 5%;
     text-align: center;
+    opacity: 0.8;
 }
 
 #app-header {
     text-align: center;
     font-size: 5.8em;
+    color: #F2F2F2;
 }
 
 #loading-container {
@@ -19,6 +21,7 @@
     font-size: 2.5em;
     background-color: #FBFBFB;
     border-radius: 6px;
+    opacity: 0.8;
 }
 
 #submit-button {
@@ -32,6 +35,7 @@
 #weather-data-container {
     background-color: #FBFBFB;
     border-radius: 6px;
+    opacity: 0.8;
 }
 
 #city-hdr {
@@ -77,6 +81,10 @@
     font-size: 1.4em;
     font-weight: 600;
     border-bottom: 1px solid black;
+}
+
+#return-btn {
+    opacity: 0.8;
 }
 
 /* Mobile Styles */
