@@ -35,7 +35,6 @@
 }
 
 #city-hdr {
-    margin-top: 2%;
     text-align: center;
     font-size: 1.4em;
 }
@@ -83,19 +82,19 @@
 /* Mobile Styles */
 @media only screen and (max-width: 750px) {
 
-#loading-container {
-    font-size: 1.4em;
-}
+    #loading-container {
+        font-size: 1.4em;
+    }
 
-#location-enter {
+    #location-enter {
         margin-top: 20%;
-}
+    }
 
-#forecast-row {
-    margin-top: 8%;
-}
+    #forecast-row {
+        margin-top: 8%;
+    }
 
-#addt-data {
-    margin-top: 6%;
-}
+    #addt-data {
+        margin-top: 6%;
+    }
 }
