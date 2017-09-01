@@ -16,17 +16,6 @@ body {
 
 #app-cont {
     min-height: 100vh;
-    /*
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ), url('./assets/images/space.jpg');
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    */
     background-color: #32B1CC;
     padding: 5%;
 }
