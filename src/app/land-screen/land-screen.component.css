@@ -15,6 +15,11 @@
     color: #F2F2F2;
 }
 
+.city-enter {
+    margin: 0 auto;
+    width: 33%;
+}
+
 #loading-container {
     margin-top: 8%;
     padding: 5%;
@@ -103,5 +108,9 @@
 
     #addt-data {
         margin-top: 6%;
+    }
+
+    .city-enter {
+        width: 80%;
     }
 }

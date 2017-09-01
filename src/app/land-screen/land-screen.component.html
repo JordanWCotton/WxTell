@@ -5,7 +5,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6 offset-md-3" id="location-enter" *ngIf="!loading; else loadingSpan">
+    <div class="city-enter" id="location-enter" *ngIf="!loading; else loadingSpan">
       <form #f="ngForm" (ngSubmit)="onSubmit(f)">
         <input class="form-control "type="text" placeholder="Enter city here..."
         name="cityName" ngModel>
